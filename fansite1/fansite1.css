@@ -28,13 +28,23 @@ body {
         margin: 0 auto;
         margin-bottom: 45px;
     }
+main {
+margin: 60px;
 
+}
 
 @media screen and (max-width: 768px) {
     #intro img {
         width: 80%;
     }
 }
+header {
+position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
 
 header nav {
     display: flex; 
@@ -70,5 +80,7 @@ footer a {
 }
 
 footer {
-    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
