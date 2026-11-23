@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	background: black;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	background: black;
+}
+
+main {
+	margin: 60px 10px;
+}
+
+.description img {
+	display: block;
+	max-width: 300px;
+	margin: 0 auto;
+}
