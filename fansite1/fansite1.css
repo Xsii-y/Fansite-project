@@ -1,0 +1,74 @@
+h1 {
+    text-align: center;
+}
+
+h1 img {
+    text-align: center;
+    width: 20%;
+}
+
+#intro img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+}
+
+body {
+    background-color: #121212;
+    margin: 0;
+}
+
+    main p {
+        text-align: center;
+        color: #F8F9FA;
+        font-size: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+
+
+@media screen and (max-width: 768px) {
+    #intro img {
+        width: 80%;
+    }
+}
+
+header nav {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    background-color: #F40204;
+    padding: 15px;
+    
+}
+
+header a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+footer nav {
+     display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    background-color: #F40204;
+    padding: 15px;
+    
+}
+
+footer a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+footer {
+    margin-bottom: 0;
+}
