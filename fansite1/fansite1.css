@@ -1,6 +1,8 @@
 h1 {
     text-align: center;
+    color: #F8F9FA;
 }
+
 
 h1 img {
     text-align: center;
@@ -87,4 +89,14 @@ footer {
 
 html {
   scrollbar-gutter: stable;
+}
+
+#contact  {
+    color: #F8F9FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
 }
