@@ -22,17 +22,16 @@ body {
     margin: 0;
 }
 
-main p {
-    text-align: center;
-    color: #F8F9FA;
-    font-size: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 45px;
+    main p {
+        text-align: center;
+        color: #F8F9FA;
+        font-size: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 45px;
     }
 main {
 margin: 60px;
-
 
 }
 
@@ -41,124 +40,155 @@ margin: 60px;
         width: 80%;
     }
 }
-header {
-position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 
 
 header nav {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
     background-color: #F40204;
-    padding: 15px;
-    
+
 }
 
 header a {
     color: #121212;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
 }
+
 footer nav {
-     display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
     background-color: #F40204;
-    padding: 15px;
     
 }
 
 footer a {
     color: #121212;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
 }
 
-footer {
-    width: 100%;
-
-}
 
 html {
   scrollbar-gutter: stable;
 }
 
-#contact  {
-    color: #F8F9FA;
+
+
+#contact {
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+#contact h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+#contact .Music {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+    margin-bottom: 18px;
 }
 
-
-.Music {
-    margin-bottom: 16px;
-}
-
-
-.Music label {
-    display: block;
-    margin-bottom: 6px;
+#contact .Music label {
     font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
 }
 
-
-.Music input[type="text"],
-.Music input[type="email"],
-.Music textarea {
-    display: block;
+#contact .Music input,
+#contact .Music textarea {
     width: 100%;
-    box-sizing: border-box; 
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: #ffffff;
+    color: #121212;
+    box-sizing: border-box;
 }
 
-
-.Music textarea {
-    min-height: 90px;
+/* Permet d'agrandir la zone de requête uniquement en hauteur */
+#contact .Music textarea {
     resize: vertical;
 }
-.Music-checkbox {
+
+#contact .Music input:focus,
+#contact .Music textarea:focus {
+    outline: none;
+    border-color: #F40204;
+    box-shadow: 0 0 6px rgba(244, 2, 4, 0.7);
+}
+
+#contact .Music-checkbox {
     display: flex;
-    align-items: center; 
-    gap: 8px;           
-    margin: 16px 0;     
-    cursor: pointer;
-}
-
-.Music-checkbox input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    margin: 0;           
-    cursor: pointer;
-    flex-shrink: 0;     
-}
-
-.Music-checkbox label {
-    margin: 0;
-    cursor: pointer;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0 25px 0;
     line-height: 1.4;
-    padding-top: 2px;
 }
 
-body {
+#contact .Music-checkbox input[type="checkbox"] {
+    margin-top: 4px;
+    accent-color: #F40204;
+    cursor: pointer;
+}
+
+#contact .Music-submit {
+    text-align: center;
+}
+
+#contact button[type="submit"] {
+    background-color: #F40204;
+    color: #121212;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #c90002;
+    color: #ffffff;
+}
+
+
+#contact .Music-checkbox {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    justify-content: center; /* Centre horizontalement la case et le texte */
+    align-items: center;     /* Aligne verticalement la case avec la ligne de texte */
+    gap: 10px;
+    margin: 20px 0 25px 0;
+    line-height: 1.4;
 }
 
-main {
-    flex: 1;
+#contact .Music-checkbox input[type="checkbox"] {
+    margin: 0; /* Enlève le décalage du haut devenu inutile */
+    accent-color: #F40204;
+    cursor: pointer;
+}
+
+h2 {
+     color: #F8F9FA;
+     text-align: center;
+}
+
+.reseaux {
+    text-align: center; /* Centre l'image */
+    margin-top: 20px;
+}
+
+.reseaux img {
+    width: 60px; 
+    height: auto; 
+}
+
+.fond-reseaux {
+    background-image: url("images/scene-res.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
