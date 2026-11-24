@@ -29,12 +29,12 @@ nav {
 	justify-content: center;
 }
 
-#menu-mobile summary {
-	padding-bottom: 15px;
-}
-
-#menu-mobile nav {
+#menu-mobile hr {
+	border: none;
+	border-top: 2px solid #121212;
+	margin: 0 auto;
 	margin-top: 15px;
+	width: 50%;
 }
 
 nav a, summary {
