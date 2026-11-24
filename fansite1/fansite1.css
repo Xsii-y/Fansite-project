@@ -22,16 +22,17 @@ body {
     margin: 0;
 }
 
-    main p {
-        text-align: center;
-        color: #F8F9FA;
-        font-size: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        margin-bottom: 45px;
+main p {
+    text-align: center;
+    color: #F8F9FA;
+    font-size: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 45px;
     }
 main {
 margin: 60px;
+
 
 }
 
@@ -82,9 +83,8 @@ footer a {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
+
 }
 
 html {
@@ -99,4 +99,66 @@ html {
     align-items: center;
 
 
+}
+
+
+.Music {
+    margin-bottom: 16px;
+}
+
+
+.Music label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+
+.Music input[type="text"],
+.Music input[type="email"],
+.Music textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+
+.Music textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+.Music-checkbox {
+    display: flex;
+    align-items: center; 
+    gap: 8px;           
+    margin: 16px 0;     
+    cursor: pointer;
+}
+
+.Music-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;           
+    cursor: pointer;
+    flex-shrink: 0;     
+}
+
+.Music-checkbox label {
+    margin: 0;
+    cursor: pointer;
+    line-height: 1.4;
+    padding-top: 2px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
