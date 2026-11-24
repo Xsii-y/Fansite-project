@@ -13,7 +13,8 @@
 /*
 classes:
 
-split: a section that contains divs and split them in rows (or columns on larger screens))
+split: a section that contains cards and split them in rows (or columns on larger screens))
+card: a div inside a split class
 
 */
 
@@ -29,13 +30,18 @@ body {
 	background-color: var(--color-obsidian);
 }
 
-nav {
+header, footer {
+	background-color: var(--color-gold);
+}
+
+summary {
 	background-color: var(--color-gold);
 }
 
 main {
 	color: var(--text-primary);
 	margin: 20px auto;
+	text-align: left;
 }
 
 h1 {
@@ -50,12 +56,11 @@ img {
 	width: 100%;
 }
 
-div {
+.card {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	margin: 20px;
-	text-align: justify;
 }
 
 .split {
@@ -74,7 +79,7 @@ div {
 	}
 
 	img {
-		min-width: 300px;
+		min-width: 200px;
 	}
 
 }
