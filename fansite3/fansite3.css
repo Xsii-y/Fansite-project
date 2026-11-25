@@ -2,7 +2,6 @@
 :root {
 	--color-obsidian: #121318;
 	--color-gold: #D4AF37;
-	--color-crimson: #9E2A2B;
 	--color-ivory: #F4F1EA;
 }
 
@@ -191,7 +190,7 @@ img {
 	background-color: var(--color-obsidian);
 	border: 1px solid var(--color-gold);
 	color: var(--color-ivory);
-	padding: 5px;
+	padding: 10px 12px;
 }
 
 #contacts input:focus, #contacts textarea:focus {
