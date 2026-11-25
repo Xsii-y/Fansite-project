@@ -1,0 +1,232 @@
+
+* {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 190px !important; 
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .contenu {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contenu img {
+        width: 200px;
+        max-width: 100%;
+    }
+
+    .texte p {
+        text-align: left; 
+    }
+}
+
+html, body {
+    font-family: Arial, sans-serif !important;
+    background-color: #132e63 !important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 120px !important;
+}
+
+header, footer, header nav, footer nav {
+    background-color: #09142c !important;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 1px 13px rgba(0, 0, 0, 0.4);
+}
+
+header, footer {
+    padding: 15px;
+}
+
+header nav a, footer nav a {
+    color: #ffffff !important;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header nav a:hover, header nav a.actif,
+footer nav a:hover, footer nav a.actif {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+    text-underline-offset: 6px;
+}
+
+main {
+    max-width: 850px;
+    width: 90%;
+    margin: 30px auto 80px auto !important;
+    background-color: #09142c !important;
+    color: #ffffff !important;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff !important;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.contenu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.contenu img {
+    width: 230px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.texte p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #f1f5f9 !important;
+}
+
+.stats, .equipe-nationale, .clubs {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+}
+
+.stats h2, .equipe-nationale h2, .clubs h2 {
+    color: #ffffff !important;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.liste-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: #132e63;
+    padding: 20px;
+    border-radius: 8px;
+    width: 210px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat-box .nombre {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #e2e8f0 !important;
+}
+
+.contenu-edf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.logo-edf {
+    text-align: center;
+}
+
+.logo-edf img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.logo-edf p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #e2e8f0 !important;
+}
+
+.contenu-edf {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo-edf {
+    text-align: center;
+}
+
+.logo-edf img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+.logo-edf p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 0.95em;
+    color: #e2e8f0 !important;
+}
+
+.stats-edf {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.stats-edf .stat-box {
+    width: 210px;
+}
+.liste-clubs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.club {
+    width: 130px;
+}
+
+.club img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.club p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.95em;
+    color: #ffffff !important;
+}
