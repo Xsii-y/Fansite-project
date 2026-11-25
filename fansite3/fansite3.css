@@ -14,7 +14,6 @@ single: a section that takes the full length without spliting it's content
 card: a div inside a split class
 */
 
-
 /*default universal attributes*/
 * { 
 	box-sizing: border-box;
@@ -57,7 +56,6 @@ img {
 	object-fit: cover;
 	object-position: top;
 	width: 100%;
-
 }
 
 .split {
@@ -100,36 +98,73 @@ img {
 }
 
 .line {
-	/*border: none;*/
-	border-top: 2px solid var(--color-ivory);
+	border: none;
+	border-top: 2px solid var(--color-gold);
 	margin: 0 auto;
 	margin-top: 15px;
 	width: 80%;
 }
 
-.contact-form {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+#contact {
 	margin: 0 auto;
 	max-width: 600px;
 }
 
-.contact-form input, textarea, button {
-	border: 1px solid var(--color-gold);
+#contact form {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+#contact p {
+	text-align: center;
+}
+
+#contact input, textarea, button {
 	background-color: var(--color-obsidian);
+	border: 1px solid var(--color-gold);
 	color: var(--color-ivory);
 	padding: 5px;
 }
 
-.contact-form textarea {
+#contact input:focus, textarea:focus {
+	outline: none;
+}
+
+
+#contact textarea {
 	min-height: 100px;
 	font-family: inherit;
 }
 
-.contact-form button {
+#contact button {
 	width: 150px;
 	align-self: center;
+}
+
+#contact button:hover {
+	background-color: var(--color-gold);
+	color: var(--color-obsidian);
+}
+
+#contact a:hover {
+	
+}
+
+.socials {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	justify-content: center;
+}
+
+.socials li {
+	list-style: none;
+}
+
+.socials a {
+	color: var(--color-gold);
+	text-decoration: none;
 }
 
 /*attributes for larger screen*/
