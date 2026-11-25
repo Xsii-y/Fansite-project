@@ -131,12 +131,12 @@ img {
 	width: 100%;
 }
 
-#quote-text {
+.quote-text {
 	color: var(--color-ivory);
 	font-style: italic;
 }
 
-.quote #quote-author {
+.quote-author {
 	color: var(--color-gold);
 	text-align: right;
 }
