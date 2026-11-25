@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<!-- ==========================================================================
+     1. EN-TÊTE TECHNIQUE (Configuration, CSS, Titre de l'onglet)
+     ========================================================================== -->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -7,7 +11,12 @@
     <link rel="stylesheet" href="fansite1.css">
     <title>Freddie Mercury</title>
 </head>
+
 <body class="fond-forum">
+
+    <!-- ==========================================================================
+         2. HAUT DE PAGE & MENU PRINCIPAL
+         ========================================================================== -->
     <header>
         <nav>
             <a href="../index.html">Accueil</a>
@@ -16,33 +25,45 @@
             <a href="../fansite3/fansite3.html">Luis Carazo</a>
         </nav>
     </header>
+
+    <!-- ==========================================================================
+         3. CONTENU PRINCIPAL (Liste des sites de fans)
+         ========================================================================== -->
     <main>
+        <h3>Sites des Fans</h3>
 
-    <h3>Sites des Fans</h3>
+        <div class="sites-fans">
+            <ul>
+                <!-- Site 1 : Queen Concerts -->
+                <li>
+                    <a href="https://www.queenconcerts.com" target="_blank">
+                        <p>Queen Concerts (Archive des tournées)</p>
+                        <img src="images/concerts.png" alt="Queen Concerts">
+                    </a>
+                </li>
 
-<div class="sites-fans">
-    <ul>
-        <li>
-            <a href="https://www.queenconcerts.com" target="_blank">
-                <p>Queen Concerts (Archive des tournées)</p>
-                <img src="images/concerts.png" alt="Queen Concerts">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.ultimatequeen.co.uk" target="_blank">
-                <p>Ultimate Queen (Discographie complète)</p>
-                <img src="images/uq.jpg" alt="Ultimate Queen">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.queenpedia.com/index.php?title=Welcome...." target="_blank">
-                <p>La base de données de référence qui répertorie tous les concerts donnés par Freddie Mercury et Queen (dates, setlists, photos et anecdotes).</p>
-                <img src="images/queenimg.png" alt="Queenpedia">
-            </a>
-        </li>
-    </ul>
-</div>
+                <!-- Site 2 : Ultimate Queen -->
+                <li>
+                    <a href="https://www.ultimatequeen.co.uk" target="_blank">
+                        <p>Ultimate Queen (Discographie complète)</p>
+                        <img src="images/uq.jpg" alt="Ultimate Queen">
+                    </a>
+                </li>
+
+                <!-- Site 3 : Queenpedia -->
+                <li>
+                    <a href="https://www.queenpedia.com/index.php?title=Welcome...." target="_blank">
+                        <p>La base de données de référence qui répertorie tous les concerts donnés par Freddie Mercury et Queen (dates, setlists, photos et anecdotes).</p>
+                        <img src="images/queenimg.png" alt="Queenpedia">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
+
+    <!-- ==========================================================================
+         4. PIED DE PAGE & NAVIGATION SECONDAIRE (Pages du fansite)
+         ========================================================================== -->
     <footer>
         <nav>
             <a href="fansite1-actu.html">Actualité</a>
@@ -54,5 +75,6 @@
             <a href="fansite1-fdc.html">Formulaire de contact</a>
         </nav>
     </footer>
+
 </body>
 </html>

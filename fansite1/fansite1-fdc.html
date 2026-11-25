@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<!-- ==========================================================================
+     1. EN-TÊTE TECHNIQUE (Configuration, CSS, Titre de l'onglet)
+     ========================================================================== -->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -7,7 +11,12 @@
     <link rel="stylesheet" href="fansite1.css">
     <title>Freddie Mercury</title>
 </head>
+
 <body>
+
+    <!-- ==========================================================================
+         2. HAUT DE PAGE & MENU PRINCIPAL
+         ========================================================================== -->
     <header>
         <nav>
             <a href="../index.html">Accueil</a>
@@ -16,43 +25,56 @@
             <a href="../fansite3/fansite3.html">Luis Carazo</a>
         </nav>
     </header>
+
+    <!-- ==========================================================================
+         3. CONTENU PRINCIPAL (Formulaire de contact)
+         ========================================================================== -->
     <main>
-    <section id="contact">
-        <h1>Contactez-nous</h1>
-        <form action="#" method="post">
+        <section id="contact">
+            <h1>Contactez-nous</h1>
 
-            <div class="Music">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
-            </div>
+            <form action="#" method="post">
+                <!-- Champ : Nom -->
+                <div class="Music">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                </div>
 
-            <div class="Music">
-                <label for="prenom">Prénom :</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
-            </div>
+                <!-- Champ : Prénom -->
+                <div class="Music">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
 
-            <div class="Music">
-                <label for="email">E-mail :</label>
-                <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
-            </div>
+                <!-- Champ : E-mail -->
+                <div class="Music">
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required>
+                </div>
 
-            <div class="Music">
-                <label for="requete">Votre requête :</label>
-                <textarea id="requete" name="requete" rows="5" placeholder="Écrivez votre message ou votre demande ici..." required></textarea>
-            </div>
+                <!-- Champ : Message / Requête -->
+                <div class="Music">
+                    <label for="requete">Votre requête :</label>
+                    <textarea id="requete" name="requete" rows="5" placeholder="Écrivez votre message ou votre demande ici..." required></textarea>
+                </div>
 
-            <div class="Music-checkbox">
-                <input type="checkbox" id="confidentialite" name="confidentialite" required>
-                <label for="confidentialite">J'accepte la politique de confidentialité de l'entreprise.</label>
-            </div>
+                <!-- Case à cocher : Politique de confidentialité -->
+                <div class="Music-checkbox">
+                    <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                    <label for="confidentialite">J'accepte la politique de confidentialité de l'entreprise.</label>
+                </div>
 
-            <div class="Music-submit">
-                <button type="submit">Envoyer</button>
-            </div>
+                <!-- Bouton d'envoi -->
+                <div class="Music-submit">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
-        </form>
-    </section>
-</main>
+    <!-- ==========================================================================
+         4. PIED DE PAGE & NAVIGATION SECONDAIRE (Pages du fansite)
+         ========================================================================== -->
     <footer>
         <nav>
             <a href="fansite1-actu.html">Actualité</a>
@@ -64,5 +86,6 @@
             <a href="fansite1-fdc.html">Formulaire de contact</a>
         </nav>
     </footer>
+
 </body>
 </html>

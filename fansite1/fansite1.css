@@ -1,73 +1,79 @@
+/* ==========================================================================
+   1. BASE & CONFIGURATION GLOBALE
+   ========================================================================== */
+html {
+    scrollbar-gutter: stable;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Supprime le débordement horizontal */
+    box-sizing: border-box;
+    background-color: #121212;
+}
+
+main {
+    margin: 60px;
+}
+
+main p {
+    text-align: center;
+    color: #F8F9FA;
+    font-size: 20px;
+    max-width: 1200px;
+    margin: 0 auto 45px auto;
+}
+
 h1 {
     text-align: center;
     color: #F8F9FA;
 }
-
 
 h1 img {
     text-align: center;
     width: 20%;
 }
 
-#intro img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-
+h2 {
+    color: #F8F9FA;
+    text-align: center;
 }
 
-body {
-    background-color: #121212;
-    margin: 0;
+h3 {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    margin: 40px 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-    main p {
-        text-align: center;
-        color: #F8F9FA;
-        font-size: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        margin-bottom: 45px;
-    }
-main {
-margin: 60px;
-
-}
-
-@media screen and (max-width: 768px) {
-    #intro img {
-        width: 80%;
-    }
-}
-
-
-
-header nav {
-    background-color: #F40204;
-
-}
-
-header a {
-    color: #121212;
-}
-
+/* ==========================================================================
+   2. HEADER & FOOTER (NAVIGATION)
+   ========================================================================== */
+header nav,
 footer nav {
     background-color: #F40204;
-    
 }
 
+header a,
 footer a {
     color: #121212;
 }
 
-
-html {
-  scrollbar-gutter: stable;
+/* ==========================================================================
+   3. PAGE D'ACCUEIL (INTRO)
+   ========================================================================== */
+#intro img {
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
-
-
+/* ==========================================================================
+   4. PAGE CONTACT
+   ========================================================================== */
 #contact {
     max-width: 480px;
     margin: 40px auto;
@@ -76,7 +82,6 @@ html {
 }
 
 #contact h1 {
-    text-align: center;
     font-size: 2.2rem;
     margin-bottom: 30px;
 }
@@ -106,9 +111,8 @@ html {
     box-sizing: border-box;
 }
 
-/* Permet d'agrandir la zone de requête uniquement en hauteur */
 #contact .Music textarea {
-    resize: vertical;
+    resize: vertical; /* Agrandissement en hauteur uniquement */
 }
 
 #contact .Music input:focus,
@@ -120,14 +124,15 @@ html {
 
 #contact .Music-checkbox {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     margin: 20px 0 25px 0;
     line-height: 1.4;
 }
 
 #contact .Music-checkbox input[type="checkbox"] {
-    margin-top: 4px;
+    margin: 0;
     accent-color: #F40204;
     cursor: pointer;
 }
@@ -153,44 +158,25 @@ html {
     color: #ffffff;
 }
 
-
-#contact .Music-checkbox {
-    display: flex;
-    justify-content: center; /* Centre horizontalement la case et le texte */
-    align-items: center;     /* Aligne verticalement la case avec la ligne de texte */
-    gap: 10px;
-    margin: 20px 0 25px 0;
-    line-height: 1.4;
-}
-
-#contact .Music-checkbox input[type="checkbox"] {
-    margin: 0; /* Enlève le décalage du haut devenu inutile */
-    accent-color: #F40204;
-    cursor: pointer;
-}
-
-h2 {
-     color: #F8F9FA;
-     text-align: center;
-}
-
-.reseaux {
-    text-align: center; /* Centre l'image */
-    margin-top: 20px;
-}
-
-.reseaux img {
-    width: 60px; 
-    height: auto; 
-}
-
+/* ==========================================================================
+   5. RÉSEAUX, SITES FANS & FORUM
+   ========================================================================== */
 .fond-reseaux {
     background-image: url("images/scene-res.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
 
+.reseaux {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reseaux img {
+    width: 60px;
+    height: auto;
 }
 
 .sites-fans ul {
@@ -209,7 +195,7 @@ h2 {
 }
 
 .sites-fans a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -221,7 +207,6 @@ h2 {
     height: auto;
 }
 
-
 .fond-forum {
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("images/fredis.webp");
     background-size: cover;
@@ -229,293 +214,195 @@ h2 {
     background-repeat: no-repeat;
     min-height: 100vh;
 }
-h3 {
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 28px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
 
+/* ==========================================================================
+   6. GALERIE PHOTOS & VIDÉOS
+   ========================================================================== */
 .galerie {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-auto-flow: row;
-    gap: 30px;
+    gap: 16px;
     width: 90%;
+    max-width: 100%;
     margin: 40px auto;
     align-items: start;
-}
-
-.photo {
-    width: 100%;
-    text-align: center;
-}
-
-.photo img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-}
-
-/* Supprimer le débordement horizontal */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
     box-sizing: border-box;
 }
 
-/* Vidéo de Montréal : taille normale */
-.montreal {
+.photo,
+.photo.montreal,
+.grande-video {
     width: 100%;
+    min-width: 0;
+    text-align: center;
 }
-
-.montreal video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 
 .grande-video {
     grid-column: 1 / -1;
     width: 95%;
     margin: 50px auto;
-    text-align: center;
     box-sizing: border-box;
-}
-
-.grande-video video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.grande-video p {
-    color: white;
-    font-size: 20px;
-}
-/* Grille principale de la galerie */
-.galerie {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-/* Cartes photo et vidéo */
-.photo,
-.photo.montreal,
-.grande-video {
-  min-width: 0;
 }
 
 .photo img,
 .photo.montreal video,
 .grande-video video {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
 }
 
-/* Légendes sous les médias */
-.galerie p {
-  margin-top: 8px;
-  text-align: center;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+.galerie p,
+.grande-video p {
+    color: #ffffff;
+    margin-top: 8px;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
-/* Adaptation téléphone */
-@media (max-width: 600px) {
-  .galerie {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 0 12px;
-  }
-
-  .photo.montreal,
-  .grande-video {
-    grid-column: 1 / -1;
-  }
-
-  .photo.montreal video,
-  .grande-video video {
-    aspect-ratio: 16 / 9;
-  }
+.grande-video p {
+    font-size: 20px;
 }
 
-
-..evenements-simple {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 0 20px;
-  color: #ffffff;
-  text-align: left;
-}
-
-.evenements-simple h1 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.evenements-simple section {
-  margin-bottom: 30px;
-}
-
-.evenements-simple h2 {
-  border-bottom: 2px solid rgb(255, 0, 0);
-  padding-bottom: 6px;
-  margin-bottom: 14px;
-}
-
-.evenements-simple ul {
-  list-style: disc;
-  padding-left: 20px;
-  line-height: 1.6;
-}
-
-.evenements-simple li {
-  margin-bottom: 12px;
-}
-
+/* ==========================================================================
+   7. PAGES DE CONTENU (ÉVÉNEMENTS, ACTUALITÉS, RÉALISATIONS)
+   ========================================================================== */
+/* Styles communs aux 3 sections */
 .evenements-simple,
-.evenements-simple p,
-.evenements-simple li,
-.evenements-simple strong,
-.evenements-simple h1,
-.evenements-simple h2 {
-  color: #ffffff !important;
-}
-
-.actu-simple {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 0 20px;
-  text-align: left;
-}
-
 .actu-simple,
+.realisations-simple {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: left;
+    color: #ffffff !important;
+}
+
+.evenements-simple *,
+.actu-simple *,
+.realisations-simple * {
+    color: #ffffff !important;
+}
+
+.evenements-simple h1,
 .actu-simple h1,
-.actu-simple h2,
-.actu-simple p,
-.actu-simple time {
-  color: #ffffff !important;
+.realisations-simple h1 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.actu-simple h1 {
-  text-align: center;
-  margin-bottom: 30px;
+.evenements-simple section,
+.realisations-simple section {
+    margin-bottom: 30px;
 }
 
+.evenements-simple h2,
+.realisations-simple h2 {
+    text-align: left;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+}
+
+.evenements-simple ul,
+.realisations-simple ul {
+    list-style: disc;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.evenements-simple li,
+.realisations-simple li {
+    margin-bottom: 12px;
+}
+
+/* Spécificités Actualités */
 .actu-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  padding-bottom: 18px;
-  margin-bottom: 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 18px;
+    margin-bottom: 22px;
 }
 
 .actu-item time {
-  display: block;
-  font-size: 0.9rem;
-  color: #ff4d4d !important;
-  font-weight: bold;
-  margin-bottom: 4px;
+    display: block;
+    font-size: 0.9rem;
+    color: #ff4d4d !important;
+    font-weight: bold;
+    margin-bottom: 4px;
 }
 
 .actu-item h2 {
-  text-align: left;
-  margin: 0 0 8px 0;
-  font-size: 1.25rem;
+    text-align: left;
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
 }
 
 .actu-item p {
-  margin: 0;
-  line-height: 1.6;
+    margin: 0;
+    line-height: 1.6;
 }
+
+/* Spécificités Albums (Réalisations) */
 .album-ligne {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
 }
 
 .album-ligne img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 6px;
-  flex-shrink: 0;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.album-ligne div,
-.album-ligne strong,
-.album-ligne em {
-  color: #ffffff !important;
-  line-height: 1.5;
+.album-ligne div {
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   8. RESPONSIVE (TABLETTES & MOBILES)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    #intro img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 600px) {
-  .album-ligne {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    /* Galerie mobile */
+    .galerie {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 12px;
+    }
 
-  .album-ligne img {
-    width: 120px;
-    height: 120px;
-  }
-}
+    .photo.montreal,
+    .grande-video {
+        grid-column: 1 / -1;
+    }
 
+    .photo.montreal video,
+    .grande-video video {
+        aspect-ratio: 16 / 9;
+    }
 
+    /* Albums mobile */
+    .album-ligne {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.realisations-simple {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 0 20px;
-  text-align: left;
-}
-
-.realisations-simple,
-.realisations-simple h1,
-.realisations-simple h2,
-.realisations-simple p,
-.realisations-simple li,
-.realisations-simple strong {
-  color: #ffffff !important;
-}
-
-.realisations-simple h1 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.realisations-simple section {
-  margin-bottom: 30px;
-}
-
-.realisations-simple h2 {
-  text-align: left;
-  border-bottom: 2px solid red;
-  padding-bottom: 6px;
-  margin-bottom: 14px;
-}
-
-.realisations-simple ul {
-  list-style: disc;
-  padding-left: 20px;
-  line-height: 1.6;
-}
-
-.realisations-simple li {
-  margin-bottom: 12px;
+    .album-ligne img {
+        width: 120px;
+        height: 120px;
+    }
 }
