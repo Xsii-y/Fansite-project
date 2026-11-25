@@ -53,10 +53,14 @@ h1 {
 }
 
 img {
+	aspect-ratio: 1;
 	display: block;
-	height: auto;
 	margin: auto;
+	max-width: 300px;
+	object-fit: cover;
+	object-position: top;
 	width: 100%;
+
 }
 
 .split {
@@ -93,6 +97,20 @@ img {
 	color: var(--color-gold);
 }
 
+.stats {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.cr-line {
+	/*border: none;*/
+	border-top: 2px solid var(--text);
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 80%;
+}
+
 @media screen and (min-width: 768px) {
 	main {
 		max-width: 900px;
@@ -103,7 +121,7 @@ img {
 	}
 
 	img {
-		min-width: 250px;
+		width: 300px;
 	}
 
 }
