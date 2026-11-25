@@ -441,3 +441,81 @@ html, body {
   margin: 0;
   line-height: 1.6;
 }
+.album-ligne {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.album-ligne img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.album-ligne div,
+.album-ligne strong,
+.album-ligne em {
+  color: #ffffff !important;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .album-ligne {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .album-ligne img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+
+.realisations-simple {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.realisations-simple,
+.realisations-simple h1,
+.realisations-simple h2,
+.realisations-simple p,
+.realisations-simple li,
+.realisations-simple strong {
+  color: #ffffff !important;
+}
+
+.realisations-simple h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.realisations-simple section {
+  margin-bottom: 30px;
+}
+
+.realisations-simple h2 {
+  text-align: left;
+  border-bottom: 2px solid red;
+  padding-bottom: 6px;
+  margin-bottom: 14px;
+}
+
+.realisations-simple ul {
+  list-style: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.realisations-simple li {
+  margin-bottom: 12px;
+}
