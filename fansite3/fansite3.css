@@ -2,7 +2,6 @@
 :root {
 	--color-obsidian: #121318;
 	--color-gold: #D4AF37;
-	--color-crimson: #9E2A2B;
 	--color-ivory: #F4F1EA;
 }
 
@@ -31,7 +30,7 @@ body {
 
 header, footer {
 	background-color: var(--color-gold);
-	padding: 15px;
+	padding: 0;
 	width: 100%;
 }
 
@@ -43,7 +42,6 @@ header {
 nav {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
 	justify-content: center;
 }
 
@@ -52,8 +50,14 @@ nav a, summary {
 	font-size: 20px;
 	font-weight: bold;
 	list-style: none;
+	padding: 20px 30px;
 	text-align: center;
 	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: var(--color-obsidian);
+	color: var(--color-gold);
 }
 
 summary {
@@ -123,15 +127,16 @@ img {
 	margin: 0 auto;
 	max-width: 500px;
 	padding: 16px 24px;
+	text-decoration: none;
 	width: 100%;
 }
 
-.quote blockquote {
+.quote-text {
 	color: var(--color-ivory);
 	font-style: italic;
 }
 
-.quote p {
+.quote-author {
 	color: var(--color-gold);
 	text-align: right;
 }
@@ -165,45 +170,45 @@ img {
 	text-decoration: none;
 }
 
-#contact {
+#contacts {
 	margin: 0 auto;
 	max-width: 600px;
 	width: 100%;
 }
 
-#contact form {
+#contacts form {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
 
-#contact p {
+#contacts p {
 	text-align: center;
 }
 
-#contact input, #contact textarea, #contact button {
+#contacts input, #contacts textarea, #contacts button {
 	background-color: var(--color-obsidian);
 	border: 1px solid var(--color-gold);
 	color: var(--color-ivory);
-	padding: 5px;
+	padding: 10px 12px;
 }
 
-#contact input:focus, #contact textarea:focus {
+#contacts input:focus, #contacts textarea:focus {
 	box-shadow: 0 0 0 1px var(--color-gold);
 	outline: none;
 }
 
-#contact textarea {
+#contacts textarea {
 	font-family: inherit;
 	min-height: 100px;
 }
 
-#contact button {
+#contacts button {
 	align-self: center;
 	width: 150px;
 }
 
-#contact button:hover {
+#contacts button:hover {
 	background-color: var(--color-gold);
 	color: var(--color-obsidian);
 }
@@ -228,6 +233,7 @@ img {
 	
 	.split {
 		flex-direction: row;
+		justify-content: center;
 	}
 
 	img {
