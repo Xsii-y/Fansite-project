@@ -34,12 +34,12 @@ Fansite-project/
 │   ├── css/
 │   └── assets/
 │
-├── fansite-2/                  # Dossier Fansite 2 : [À renommer selon le dossier]
+├── fansite-2/                  # Dossier Fansite 2 : Antoine Griezmann
 │   ├── index.html
 │   ├── css/
 │   └── assets/
 │
-├── fansite-3/                  # Dossier Fansite 3 : [À renommer selon le dossier]
+├── fansite-3/                  # Dossier Fansite 3 : Luis Carazo
 │   ├── index.html
 │   ├── css/
 │   └── assets/
