@@ -29,7 +29,7 @@ Fansite-project/
 │   └── style.css               # Feuille de style de la page portail
 ├── assets/                     # Ressources globales (logos, icônes, polices)
 │
-├── fansite-queen/              # Dossier Fansite 1 : Freddie Mercury & Queen
+├── fansite-queen/              # Dossier Fansite 1 : Freddie Mercury
 │   ├── index.html
 │   ├── css/
 │   └── assets/
