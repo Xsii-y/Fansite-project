@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<!-- ==========================================================================
+     1. EN-TÊTE TECHNIQUE (Configuration, CSS, Titre de l'onglet)
+     ========================================================================== -->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fansite1.css">
     <title>Freddie Mercury</title>
 </head>
+
 <body>
+
+    <!-- ==========================================================================
+         2. HAUT DE PAGE & MENU PRINCIPAL
+         ========================================================================== -->
     <header>
         <nav>
             <a href="../index.html">Accueil</a>
@@ -17,6 +25,46 @@
         </nav>
     </header>
 
+    <!-- ==========================================================================
+         3. CONTENU PRINCIPAL (Liste des actualités)
+         ========================================================================== -->
+    <main class="actu-simple">
+        <h1>Actualités : Queen & Freddie Mercury</h1>
+
+        <!-- Actualité 1 : Anniversaire d'album -->
+        <article class="actu-item">
+            <time datetime="2026-10">Octobre 2026</time>
+            <h2>50 ans de l'album « A Day at the Races »</h2>
+            <p>
+                Sorti en 1976, l'album culte porté par <em>Somebody to Love</em> fête son 50e anniversaire
+                avec plusieurs rétrospectives et hommages consacrés à l'enregistrement de Queen.
+            </p>
+        </article>
+
+        <!-- Actualité 2 : Anniversaire de concert -->
+        <article class="actu-item">
+            <time datetime="2026-10">Automne 2026</time>
+            <h2>40 ans du concert historique de Budapest</h2>
+            <p>
+                À l'occasion des 40 ans du Magic Tour 1986, le concert filmé à Budapest fait l'objet de
+                projections spéciales et d'archives mises en avant auprès des fans.
+            </p>
+        </article>
+
+        <!-- Actualité 3 : Exposition photo -->
+        <article class="actu-item">
+            <time datetime="2026-11">Novembre 2026</time>
+            <h2>Exposition photographique sur Freddie Mercury en France</h2>
+            <p>
+                L'exposition <em>Freddie Mercury, never say goodbye</em> attire les visiteurs en Provence
+                avec 170 photographies commentées sur la vie et la scène de l'artiste.
+            </p>
+        </article>
+    </main>
+
+    <!-- ==========================================================================
+         4. PIED DE PAGE & NAVIGATION SECONDAIRE (Pages du fansite)
+         ========================================================================== -->
     <footer>
         <nav>
             <a href="fansite1-actu.html">Actualité</a>
@@ -28,5 +76,6 @@
             <a href="fansite1-fdc.html">Formulaire de contact</a>
         </nav>
     </footer>
+
 </body>
 </html>
