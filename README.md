@@ -1,7 +1,7 @@
 # 🌟 Projet Fansites — Hub Multi-Sites 
 
 Plateforme web statique réalisée en **HTML5** et **CSS3**, réunissant plusieurs sites vitrines dédiés à des artistes, œuvres ou personnalités emblématiques. Chaque fansite dispose de son propre dossier et de son identité visuelle, reliés par une page d'accueil commune.
-
+(Fansite)[https://xsii-y.github.io/Fansite-project/]
 ---
 
 ## 📋 Aperçu du projet
