@@ -213,7 +213,7 @@ img {
 	color: var(--color-obsidian);
 }
 
-/*attributes for larger screen*/
+/*attributes for Desktop screen*/
 @media screen and (min-width: 768px) {
 	#menu-mobile {
 		display: none;
@@ -237,6 +237,5 @@ img {
 	}
 
 	img {
-		width: 300px;
+		max-width: 25vw;
 	}
-}
