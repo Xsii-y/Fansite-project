@@ -216,6 +216,11 @@ footer a {
     height: auto;
 }
 
+.reseaux a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .sites-fans ul {
     list-style: none;
     padding: 0;
@@ -251,6 +256,7 @@ footer a {
     background-repeat: no-repeat;
     min-height: 100vh;
 }
+
 
 /* ==========================================================================
    6. GALERIE PHOTOS & VIDÉOS
@@ -443,6 +449,3 @@ footer a {
         height: 120px;
     }
 }
-
-
-*(Note : Tu peux maintenant retirer la balise `<link rel="stylesheet" href="shared.css">` de tes fichiers HTML et ne garder que `fansite1.css`.)*
